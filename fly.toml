@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for ssafy-2024-backend on 2024-12-17T15:14:18+09:00
+# fly.toml app configuration file generated for data2-backend on 2025-07-03T16:00:40+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'ssafy-2024-backend'
+app = 'data2-backend'
 primary_region = 'nrt'
 
 [build]
@@ -15,7 +15,7 @@ primary_region = 'nrt'
 [http_service]
   internal_port = 8000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
